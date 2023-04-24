@@ -21,6 +21,8 @@ const Home = ({products, bannerData }) => (
   </div>
   );
 
+
+  /* api for fetching entire product from sanity */
   export const getServerSideProps = async () =>{
     const query = '*[_type == "product"]';
     const products = await client.fetch(query);
