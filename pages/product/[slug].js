@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from '../../sanity_estore/node_modules/react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
-import { client, urlFor } from '@/lib/client';
-import { Product } from '@/components';
+import { client, urlFor } from '../../lib/client';
+import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({product, products}) => {
@@ -25,6 +25,7 @@ const ProductDetails = ({product, products}) => {
                 <div className='small-images-container'>
                     {image.map((item, i) => (
                         <img 
+                            key={i}
                             src={urlFor(item)}
                             className={i=== index ? 
                             'small-image selected-image' : 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { urlFor } from '@/lib/client';
+import { urlFor } from '../lib/client';
 
 const HeroBanner = ({heroBanner}) => {
   return (
@@ -16,10 +16,12 @@ const HeroBanner = ({heroBanner}) => {
         
         <div>
           <Link href={`/product/${heroBanner.product}`}>
-            <button type='button'>{heroBanner.buttonText}</button>
-            <div className='desc'>
-              <h5>Description</h5>
-              <p>{heroBanner.desc}</p>
+            <div>
+              <button type='button'>{heroBanner.buttonText}</button>
+              <div className='desc'>
+                <h5>Description</h5>
+                <p>{heroBanner.desc}</p>
+              </div>
             </div>
           </Link>
         </div>

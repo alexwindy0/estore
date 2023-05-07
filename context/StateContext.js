@@ -5,8 +5,8 @@ import React,
     useEffect,
     useState
 }  from "react";
-import { toast } from '../sanity_estore/node_modules/react-hot-toast';
-import product from "@/sanity_estore/schemas/product";
+import { toast } from 'react-hot-toast';
+import product from "../sanity_estore/schemas/product";
 
 //calling createContext as a Hook
 const Context = createContext();
@@ -116,7 +116,9 @@ export const StateContext = ({ children }) =>{
             decQty,
             onAdd,
             toggleCartItemQuantity,
-            onRemove
+            onRemove,
+            setCartItems,setTotalPrice,
+            setTotalQuantities
         }}>
             {children}
         </Context.Provider>

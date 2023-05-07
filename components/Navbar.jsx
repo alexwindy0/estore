@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiOutlineShopping } from '../sanity_estore/node_modules/react-icons/ai'; 
+import { AiOutlineShopping } from 'react-icons/ai'; 
 
 import { Cart } from './';
-import { useStateContext } from '@/context/StateContext';
+import { useStateContext } from '../context/StateContext';
 
 const Navbar = () => {
 

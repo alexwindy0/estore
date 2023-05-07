@@ -1,10 +1,10 @@
 import React from 'react';
-import { Toaster } from '../sanity_estore/node_modules/react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
-import { Layout  } from '@/components';
-import '@/styles/globals.css';
-import { StateContext } from '@/context/StateContext';
+import { Layout  } from '../components';
+import '../styles/globals.css';
+import { StateContext } from '../context/StateContext';
 
 
 export default function App({ Component, pageProps }) {
