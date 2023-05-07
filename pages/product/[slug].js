@@ -1,3 +1,4 @@
+//product details file
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
@@ -12,7 +13,14 @@ const ProductDetails = ({product, products}) => {
     const [index, setIndex] = useState(0);
 
     //pulling from useStateContext (destructured)
-    const {decQty, incQty, qty, onAdd } = useStateContext();
+    const {decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+
+    //buy now button
+    const handleBuyNow = () => {
+        onAdd(product, qty);
+
+        setShowCart(true);
+    }
 
   return (
     <div>
@@ -59,7 +67,7 @@ const ProductDetails = ({product, products}) => {
                         <span className='minus' onClick={decQty} ><AiOutlineMinus />
                         
                         </span>
-                        <span className='num' onClick="" >{qty}</span>
+                        <span className='num'>{qty}</span>
                         <span className='plus' onClick={incQty} ><AiOutlinePlus />
                         
                         </span>
@@ -73,7 +81,7 @@ const ProductDetails = ({product, products}) => {
                     <button 
                         type='button'  
                         className='buy-now'
-                        onClick="">Buy Now</button>
+                        onClick={ handleBuyNow }>Buy Now</button>
                  
                  </div>
             </div>
