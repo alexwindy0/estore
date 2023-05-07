@@ -144,7 +144,7 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background: linear-gradient(to top, #333333, #dd1818);
   color: white;
   border: none;
   margin-top: 40px;
@@ -212,7 +212,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background: linear-gradient(to right, #333333, #dd1818);
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -235,6 +235,10 @@ text-align: end;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+}
+.banner-desc button:hover{
+  background: linear-gradient(to bottom, #52c234, #061700);
+  color: #fff;
 }
 .banner-desc .left h3{
   font-weight: 900;
