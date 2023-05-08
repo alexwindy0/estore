@@ -110,7 +110,8 @@ width: 100%;
 
 }
 .product-card:hover{
-  transform: scale(1.1,1.1)
+  transform: scale(1.1,1.1);
+  box-shadow: 2px 2px 8px rgba(80, 76, 76, 0.5);
 }
 .product-image{
   border-radius: 15px;
@@ -130,7 +131,7 @@ width: 100%;
 
 .hero-banner-container{
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  background: linear-gradient(to top, #bdc3c7, #2c3e50);
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -152,6 +153,13 @@ width: 100%;
   font-weight: 500;
   cursor: pointer;
   z-index:10000 !important;
+}
+
+.hero-banner-container button:hover{
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: #fff;
+  box-shadow: 2px 2px 8px rgba(80, 76, 76, 0.5);
+  text-transform: uppercase;
 }
 
 .hero-banner-container h3{
@@ -212,7 +220,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background: linear-gradient(to right, #333333, #dd1818);
+  background: linear-gradient(to top, #333333, #dd1818);
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -237,8 +245,10 @@ text-align: end;
   cursor: pointer;
 }
 .banner-desc button:hover{
-  background: linear-gradient(to bottom, #52c234, #061700);
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
   color: #fff;
+  box-shadow: 2px 2px 8px rgba(80, 76, 76, 0.5);
+  text-transform: uppercase;
 }
 .banner-desc .left h3{
   font-weight: 900;
